@@ -110,8 +110,8 @@ int main() {
                     static const char *orderScope[] = {"Composite", "Regional", "Aggregate", "Order"};
 
                     fmt::format_to(std::back_inserter(out),
-                                   "index={}, time={}, exchange={}, price={:.15g}, size={:.15g}, bid price={:.15g}, "
-                                   "ask price={:.15g}, exchange sale conditions={}, buyer={}, seller={}, side={}, "
+                                   "index={}, time={}, exchange={}, price={:.6f}, size={:.6f}, bid price={:.6f}, "
+                                   "ask price={:.6f}, exchange sale conditions={}, buyer={}, seller={}, side={}, "
                                    "type={}, is valid tick={}, is ETH trade={}, Trade Through Exempt={}, is spread "
                                    "leg={}, scope={}, event flags={:#X}, raw_flags={:#X}",
                                    tns->index, formatLocalTimestampWithMillis(tns->time),
