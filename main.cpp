@@ -3,10 +3,6 @@
 #include <fmt/format.h>
 #include <iostream>
 #include <thread>
-
-#define LS(s) LS2(s)
-#define LS2(s) L##s
-
 #include <string>
 
 #ifdef _MSC_FULL_VER
